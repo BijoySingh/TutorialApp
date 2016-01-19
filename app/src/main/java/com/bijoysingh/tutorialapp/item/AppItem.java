@@ -2,6 +2,8 @@ package com.bijoysingh.tutorialapp.item;
 
 import android.graphics.drawable.Drawable;
 
+import com.birdlabs.starter.database.DatabaseModel;
+
 /**
  * Created by bijoy on 1/17/16.
  */

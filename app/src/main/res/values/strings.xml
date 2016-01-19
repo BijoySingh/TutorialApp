@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Tutorial App</string>
     <string name="title_activity_main">MainActivity</string>
+
+    <string name="button">START</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="save_question">Save?</string>
 </resources>
