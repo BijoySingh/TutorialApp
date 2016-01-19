@@ -2,6 +2,7 @@ package com.bijoysingh.tutorialapp.adapter;
 
 import android.content.Context;
 
+import com.bijoysingh.tutorialapp.R;
 import com.bijoysingh.tutorialapp.item.AppItem;
 import com.bijoysingh.tutorialapp.view.AppViewHolder;
 import com.birdlabs.starter.recyclerview.RVAdapter;
@@ -14,8 +15,8 @@ import java.util.List;
  */
 public class AppAdapter extends RVAdapter<AppItem, AppViewHolder> {
 
-    public AppAdapter(Context context, Integer layout, List<AppItem> contents) {
-        super(context, layout, AppViewHolder.class);
+    public AppAdapter(Context context, List<AppItem> contents) {
+        super(context, R.layout.app_item, AppViewHolder.class);
         this.contents = contents;
     }
 

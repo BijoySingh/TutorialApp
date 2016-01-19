@@ -8,4 +8,9 @@
     <color name="app_package">#65000000</color>
 
     <color name="button_color">#FF4081</color>
+
+    <color name="note_title">#99000000</color>
+    <color name="note_description">#65000000</color>
+    <color name="note_activity_background">#eaeaea</color>
+
 </resources>

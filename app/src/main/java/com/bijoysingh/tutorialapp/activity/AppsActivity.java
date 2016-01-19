@@ -15,7 +15,7 @@ import com.bijoysingh.tutorialapp.item.AppItem;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class AppsActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
     LinearLayoutManager layoutManager;
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void loadAppsIntoRecyclerView() {
         List<AppItem> apps = getApps();
-        AppAdapter adapter = new AppAdapter(this, R.layout.app_item, apps);
+        AppAdapter adapter = new AppAdapter(this, apps);
         recyclerView.setAdapter(adapter);
     }
 

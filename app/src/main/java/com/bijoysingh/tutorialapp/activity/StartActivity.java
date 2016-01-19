@@ -14,38 +14,55 @@ import com.birdlabs.starter.Functions;
 
 public class StartActivity extends AppCompatActivity {
 
-    private final static String SAVED_KEY = "SAVED";
+    private final static String NAME_KEY = "NAME";
+    private EditText name;
+    private Switch save;
+    private Preferences preference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_other);
 
-        final Preferences preference = new Preferences(this);
-        if (preference.load(SAVED_KEY, false)) {
-            openAppsActivity();
-        }
+        preference = new Preferences(this);
+        name = (EditText) findViewById(R.id.name);
+        name.setText(preference.load(NAME_KEY, ""));
+        save = (Switch) findViewById(R.id.save);
 
-        final EditText name = (EditText) findViewById(R.id.name);
-        final Switch save = (Switch) findViewById(R.id.save);
-
-        Button start = (Button) findViewById(R.id.submit);
-        start.setOnClickListener(new View.OnClickListener() {
+        Button apps = (Button) findViewById(R.id.apps);
+        apps.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                if (save.isChecked()) {
-                    preference.save(SAVED_KEY, true);
-                }
-
-                Functions.makeToast(getApplicationContext(), "Hello, " + name.getText().toString());
+                handleStart();
                 openAppsActivity();
+            }
+        });
+
+        Button notes = (Button) findViewById(R.id.notes);
+        notes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                handleStart();
+                openNotesActivity();
             }
         });
     }
 
+    public void handleStart() {
+        if (save.isChecked()) {
+            preference.save(NAME_KEY, name.getText().toString());
+        }
+        Functions.makeToast(getApplicationContext(), "Hello, " + name.getText().toString());
+    }
+
     public void openAppsActivity() {
-        Intent appsActivityIntent = new Intent(getApplicationContext(), MainActivity.class);
+        Intent appsActivityIntent = new Intent(getApplicationContext(), AppsActivity.class);
+        startActivity(appsActivityIntent);
+        finish();
+    }
+
+    public void openNotesActivity() {
+        Intent appsActivityIntent = new Intent(getApplicationContext(), NotesActivity.class);
         startActivity(appsActivityIntent);
         finish();
     }

@@ -39,11 +39,20 @@
     </RelativeLayout>
 
     <Button
-        android:id="@+id/submit"
+        android:id="@+id/apps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@color/button_color"
+        android:text="@string/phone_apps"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/notes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/button_color"
-        android:text="@string/button"
+        android:text="@string/notes"
         android:textColor="@android:color/white"/>
 
 </LinearLayout>

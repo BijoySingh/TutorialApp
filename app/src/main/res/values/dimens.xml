@@ -6,4 +6,7 @@
 
     <dimen name="app_name">18sp</dimen>
     <dimen name="app_package">16sp</dimen>
+
+    <dimen name="note_title">18sp</dimen>
+    <dimen name="note_description">14sp</dimen>
 </resources>
