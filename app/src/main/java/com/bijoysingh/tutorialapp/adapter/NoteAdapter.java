@@ -5,7 +5,7 @@ import android.content.Context;
 import com.bijoysingh.tutorialapp.R;
 import com.bijoysingh.tutorialapp.item.NoteItem;
 import com.bijoysingh.tutorialapp.view.NoteViewHolder;
-import com.birdlabs.starter.recyclerview.RVAdapter;
+import com.github.bijoysingh.starter.recyclerview.RVAdapter;
 
 import java.util.List;
 

@@ -1,7 +1,6 @@
 package com.bijoysingh.tutorialapp.activity;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -10,8 +9,8 @@ import com.bijoysingh.tutorialapp.R;
 import com.bijoysingh.tutorialapp.adapter.NoteAdapter;
 import com.bijoysingh.tutorialapp.item.NoteItem;
 import com.bijoysingh.tutorialapp.util.Preferences;
-import com.birdlabs.starter.database.DatabaseManager;
-import com.birdlabs.starter.database.DatabaseModel;
+import com.github.bijoysingh.starter.database.DatabaseManager;
+import com.github.bijoysingh.starter.database.DatabaseModel;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
 package com.bijoysingh.tutorialapp.item;
 
-import com.birdlabs.starter.database.DBColumn;
-import com.birdlabs.starter.database.DatabaseModel;
+import com.github.bijoysingh.starter.database.DBColumn;
+import com.github.bijoysingh.starter.database.DatabaseModel;
 
 /**
  * Created by bijoy on 1/19/16.

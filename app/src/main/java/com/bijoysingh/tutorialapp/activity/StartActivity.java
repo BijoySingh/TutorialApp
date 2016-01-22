@@ -10,7 +10,7 @@ import android.widget.Switch;
 
 import com.bijoysingh.tutorialapp.R;
 import com.bijoysingh.tutorialapp.util.Preferences;
-import com.birdlabs.starter.Functions;
+import com.github.bijoysingh.starter.Functions;
 
 public class StartActivity extends AppCompatActivity {
 
@@ -46,6 +46,15 @@ public class StartActivity extends AppCompatActivity {
                 openNotesActivity();
             }
         });
+
+        Button news = (Button) findViewById(R.id.news);
+        news.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                handleStart();
+                openNewsActivity();
+            }
+        });
     }
 
     public void handleStart() {
@@ -58,12 +67,15 @@ public class StartActivity extends AppCompatActivity {
     public void openAppsActivity() {
         Intent appsActivityIntent = new Intent(getApplicationContext(), AppsActivity.class);
         startActivity(appsActivityIntent);
-        finish();
     }
 
     public void openNotesActivity() {
         Intent appsActivityIntent = new Intent(getApplicationContext(), NotesActivity.class);
         startActivity(appsActivityIntent);
-        finish();
+    }
+
+    public void openNewsActivity() {
+        Intent newsActivityIntent = new Intent(getApplicationContext(), NewsActivity.class);
+        startActivity(newsActivityIntent);
     }
 }

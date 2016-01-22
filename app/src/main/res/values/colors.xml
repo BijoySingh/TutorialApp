@@ -13,4 +13,9 @@
     <color name="note_description">#65000000</color>
     <color name="note_activity_background">#eaeaea</color>
 
+
+    <color name="news_title">#BC000000</color>
+    <color name="news_description">#99000000</color>
+    <color name="news_category">#FF4081</color>
+    <color name="news_author">#65000000</color>
 </resources>

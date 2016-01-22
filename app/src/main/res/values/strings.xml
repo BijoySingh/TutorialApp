@@ -3,7 +3,8 @@
     <string name="title_activity_main">MainActivity</string>
 
     <string name="notes">NOTES</string>
-    <string name="phone_apps">PHONE APPS</string>
+    <string name="phone_apps">APPS</string>
+    <string name="internet">NEWS</string>
     <string name="enter_name">Enter Name</string>
     <string name="save_question">Save?</string>
 </resources>

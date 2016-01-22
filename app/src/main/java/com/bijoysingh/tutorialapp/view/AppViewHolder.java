@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import com.bijoysingh.tutorialapp.R;
 import com.bijoysingh.tutorialapp.item.AppItem;
-import com.birdlabs.starter.recyclerview.RVHolder;
+import com.github.bijoysingh.starter.recyclerview.RVHolder;
 
 /**
  * App View Holder
@@ -37,7 +37,7 @@ public class AppViewHolder extends RVHolder<AppItem> {
         itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent LaunchIntent =  context.getPackageManager()
+                Intent LaunchIntent = context.getPackageManager()
                         .getLaunchIntentForPackage(data.appPackage);
                 context.startActivity(LaunchIntent);
             }

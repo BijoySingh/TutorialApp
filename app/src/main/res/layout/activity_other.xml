@@ -48,11 +48,22 @@
         android:textColor="@android:color/white"/>
 
     <Button
+        android:id="@+id/news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@color/button_color"
+        android:text="@string/internet"
+        android:textColor="@android:color/white"/>
+
+    <Button
         android:id="@+id/notes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/button_color"
         android:text="@string/notes"
         android:textColor="@android:color/white"/>
+
+
 
 </LinearLayout>

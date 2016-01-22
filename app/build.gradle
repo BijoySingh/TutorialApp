@@ -32,7 +32,8 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.android.support:design:23.1.1'
     compile 'com.android.support:cardview-v7:23.1.1'
+    compile 'com.mcxiaoke.volley:library:1.0.17'
 
     // ADD THE LIB SOURCE
-    compile(name:'starterpack', ext:'aar')
+    compile(name:'app-0.8.3', ext:'aar')
 }

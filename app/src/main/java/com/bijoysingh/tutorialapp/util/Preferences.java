@@ -2,7 +2,7 @@ package com.bijoysingh.tutorialapp.util;
 
 import android.content.Context;
 
-import com.birdlabs.starter.util.PreferenceManager;
+import com.github.bijoysingh.starter.util.PreferenceManager;
 
 /**
  * Created by bijoy on 1/18/16.
